@@ -1,2 +1,4 @@
 # tg buy & bridge bot
- telegram bot to buy sell and bridge crypto assets
+- Telegram bot to buy sell and bridge crypto assets
+-  Technical analysis bot using open ai
+-  Chart display
