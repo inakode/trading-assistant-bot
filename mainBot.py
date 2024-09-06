@@ -94,6 +94,7 @@ dp.add_handler(CommandHandler("price", price))
 dp.add_handler(CommandHandler("trade", trade))
 dp.add_handler(CommandHandler("insight", insight))
 dp.add_handler(CommandHandler("chart", chart))
+# add logic for other commands such as user prompts..
 
 # Start the bot
 updater.start_polling()
