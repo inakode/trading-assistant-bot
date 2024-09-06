@@ -1,4 +1,4 @@
-# tg buy & bridge bot
+# tg swap, chart, data & bridge bot
 
  telegram bot to buy, sell, bridge and create charts for crypto assets.
  also aiming to give market insight and analysis.
