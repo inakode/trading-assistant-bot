@@ -18,14 +18,15 @@ STEPS:
 3. **Configura la API de OpenAI**:
     - Regístrate en OpenAI y obtén tu clave de API.
     - Instala el cliente de Python de OpenAI: `pip install openai`.
+    - Integrar control de mensajes y el manejo de funciones de swap, bridge, creacion de gráficas y analisis de mercado(breve).
 
 4. **Integra la API de Dextools**:
     - Regístrate en Dextools y obtén tu clave de API.
     - Usa la biblioteca `requests` para obtener datos de la API de Dextools.
 
-5. **Integra Uniswap**:
+<!-- 5. **Integra Uniswap**:
     - Obtén tu clave de API de Uniswap.
-    - Usa la biblioteca `web3` para interactuar con los contratos inteligentes de Uniswap.
+    - Usa la biblioteca `web3` para interactuar con los contratos inteligentes de Uniswap. -->
 
 6. **Integra el puente**:
     - Usando el webapp de swapspace (Crypto exchange aggregator)
@@ -51,3 +52,5 @@ STEPS:
 11. **Despliega el bot**:
     - Despliega tu bot en un servidor o servicio en la nube para mantenerlo funcionando 24/7.
     - Ejemplo: Usa Heroku, AWS u otro servicio en la nube.
+
+-
