@@ -51,8 +51,3 @@ STEPS:
 11. **Despliega el bot**:
     - Despliega tu bot en un servidor o servicio en la nube para mantenerlo funcionando 24/7.
     - Ejemplo: Usa Heroku, AWS u otro servicio en la nube.
-
-// TODO //
-New feature.
-
- Hooks can enable order types (i.e. limit order), specially-tailored oracles, or custom AMM curves. The flexibility of hooks allows for a broad range of innovations while maintaining the core efficiency of the platform.
