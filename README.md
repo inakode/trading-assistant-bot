@@ -24,32 +24,32 @@ STEPS:
     - Regístrate en Dextools y obtén tu clave de API.
     - Usa la biblioteca `requests` para obtener datos de la API de Dextools.
 
-<!-- 5. **Integra Uniswap**:
+    <!-- 4. **Integra Uniswap**:
     - Obtén tu clave de API de Uniswap.
     - Usa la biblioteca `web3` para interactuar con los contratos inteligentes de Uniswap. -->
 
-6. **Integra el puente**:
+5. **Integra el puente**:
     - Usando el webapp de swapspace (Crypto exchange aggregator)
     - Obten tu API
 
-7. **Obtén y muestra datos**:
+6. **Obtén y muestra datos**:
     - Escribe funciones para obtener el precio del token, capitalización de mercado, volumen, titulares, etc., de la API de Dextools.
-    - Escribe funciones para ejecutar transacciones usando la API de Uniswap.
+    - Escribe funciones para ejecutar transacciones usando la API de Dextools.
 
-8. **Genera ideas de inversión**:
+7. **Genera ideas de inversión**:
     - Usa la API de OpenAI para analizar datos y generar ideas de inversión.
     - Ejemplo: Envía un prompt a la API de OpenAI con los datos obtenidos y recibe una respuesta con consejos de inversión.
 
-9. **Muestra gráficos**:
+8. **Muestra gráficos**:
     - Usa `matplotlib` para generar gráficos.
     - Guarda los gráficos como imágenes y envíalos en el chat de Telegram.
 
-10. **Combina todo en el bot**:
+9. **Combina todo en el bot**:
     - Escribe el script principal del bot para manejar los comandos de usuario e integrar todas las funcionalidades.
     - Ejemplo: El comando `/price` obtiene y muestra el precio del token, el comando `/trade` ejecuta una transacción, etc. que también
-     sea posible activar el bot a partir de simples prompts.
+     sea posible activar el bot a partir de prompts conversacionales.
 
-11. **Despliega el bot**:
+10. **Despliega el bot**:
     - Despliega tu bot en un servidor o servicio en la nube para mantenerlo funcionando 24/7.
     - Ejemplo: Usa Heroku, AWS u otro servicio en la nube.
 
