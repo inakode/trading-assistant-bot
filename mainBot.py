@@ -1,5 +1,4 @@
 import os
-import telebot
 from telegram.ext import Updater, CommandHandler
 import openai
 import requests
@@ -20,7 +19,6 @@ yahoo_finance_api_key = "your_yahoo_finance_api_key"
 
 # Example usage
 crypto = "your_crypto_ticker"
-dextools_api_key = "your_dextools_api_key"
 data = get_dextools_data(ticker=crypto)
 print(data)
 
