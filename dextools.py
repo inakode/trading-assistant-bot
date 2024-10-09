@@ -3,7 +3,7 @@
 
 import json
 import websocket
-import axios from 'axios'
+import requests
 
 from dextools_python import DextoolsAPIV2
 
