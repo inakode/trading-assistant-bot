@@ -20,13 +20,12 @@ load_dotenv()
 # Cargar las claves desde las variables de entorno
 BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-DEXTOOLS_API_KEY = os.getenv('DEXTOOLS_API_KEY')
 
 # Configurar la API de OpenAI
 openai.api_key = OPENAI_API_KEY
 
-if not BOT_TOKEN or not OPENAI_API_KEY or not DEXTOOLS_API_KEY:
-    logger.error("No se cargaron correctamente las claves API. Verifica tu archivo .env")
+if not BOT_TOKEN or not OPENAI_API_KEY:
+    logger.error("No se cargaron correctamente las claves API. Verifica archivo .env")
     exit(1)
 
 # Diccionario para almacenar el historial de conversación de cada usuario
@@ -37,6 +36,7 @@ conversation_history = defaultdict(list)
 async def get_ai_response(user_id, user_message):
     # Añadir el mensaje del usuario al historial
     conversation_history[user_id].append({"role": "user", "content": user_message})
+    # # Limitar el historial a las últimas 10 interacciones para evitar tokens excesivos
     conversation_history[user_id] = conversation_history[user_id][-10:]
 
     # Preparar el contexto para la API de ChatGPT
