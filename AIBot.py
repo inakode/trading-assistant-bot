@@ -38,7 +38,7 @@ def get_ai_response(user_id, user_message):
     ] + conversation_history[user_id]
 
     try:
-        response = openai.Completion.create(model="gpt-3.5-turbo", messages=messages)
+        response = openai.Completion.create(model="gpt-4o", messages=messages)
         ai_response = response.choices[0].message["content"].strip()
 
         # Añadir la respuesta de la IA al historial
