@@ -53,6 +53,7 @@ async def get_ai_response(user_id, user_message):
             model="gpt-4o-mini",  
             messages=messages,
             temperature=0.5  
+        main
         )
 
         ai_response = response.choices[0].message["content"].strip()
